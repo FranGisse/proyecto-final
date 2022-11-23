@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0%;
+}
+body{
+    font-family: sans-serif;
+    padding: 90px 20px 0;
+}
+.header{
+    background-color: rgb(179, 172, 172);
+    height: 80px;
+    position: fixed;
+    width: 100%;
+    top:0;
+    left: 0;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    max-width: 992px;
+     margin: 0 auto;
+}
+.nav-link{
+    color: white;
+    text-decoration: none;
+}
+.logo{
+    font-size: 30px;
+    font-weight: bold;
+    padding: 0 40px;
+    line-height: 80px;
+}
+.nav-menu{
+    display: flex;
+    margin-right: 40px;
+    list-style: none;
+}
+.nav-menu-item{
+    font-size: 18px;
+    margin:0 10px;
+    line-height: 80px;
+    text-transform: uppercase;
+    width: max-content;
+}
+.nav-menu-link{
+    padding: 8px 12px;
+    border-radius: 3px;
+}
+.nav-menu-link:hover{
+    background-color: rgb(241, 182, 237);
+    transition: 0.5s;
+}
+.nav-toggle{
+    color: white;
+    background: none;
+    border:none;
+    font-size: 30px;
+    padding: o 20px;
+    line-height: 60px;
+
+    display:none;
+}
+h2{
+    font-size: 35px;
+    font-weight: 200;
+    padding: 20px;
+}
+section{
+    padding: 80px 160px;
+    margin: 0;
+}
+seccion{
+    margin: 0%;
+    border: 2px;
+    position: relative;
+    height: fit-content;
+    display: flex;
+    flex-direction: column; }
+    
+    
+.Artesanales img{
+    height: 200px;
+    width:300px ;
+    border-radius: 20%;
+     border: 7px solid rgb(233, 211, 235);
+     margin: 0px;
+    
+}
+
+
+
+ 
+.Artesanales{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    max-width: 100%;
+    gap:40px;
+    
+    
+    
+    
+
+    
+    }
+
+   
+
+@media (max-widht:778px) { 
+body{
+    padding-top: 70px;
+}
+.header{
+    
+    height: 60px;
+    
+}
+
+.logo{
+    font-size: 25px;
+    padding: 0 20px;
+    line-height: 60px;
+}
+.nav-menu{
+    flex-direction: column;
+    margin-right: 20px;
+    background-color: bisque;
+    position: fixed;
+    left: 0;
+    top:60px;
+    width: 100%;
+    padding: 20px 0;
+    height: calc(100%-60%);
+    overflow-y:auto;
+    left: 100%;
+    transition: left o.3s;
+}
+.nav-menu-item{
+    
+    line-height: 70px;
+    
+}
+
+
+.nav-menu-link:hover {
+
+    background-color: none;
+    color: bisque;
+}
+.nav-toggle{
+    display:block;
+}
+.nav-menu_visible{
+left:0;
+}
+
+}

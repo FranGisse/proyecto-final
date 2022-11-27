@@ -10,7 +10,7 @@ body{
     background-image: url(./anillo/IMG-20221114-WA0003.jpg)
     
 }
-.contenedor{
+.principal{
     
     min-height: 1100px;
 }
@@ -63,55 +63,41 @@ body{
     color: white;
     background: none;
     border:none;
-    font-size: 50px;
-    padding:  20px;
+    font-size: 30px;
+    padding: 0 20px;
     line-height: 60px;
-
     display:none;
-}
-.readMore_btn{
-    width: 10%;
-    padding: 0px;
-    color: white;
-    background-color: rgb(192, 178, 192);
-    height: 40px;
-    font-size: 25px;
-    margin: 0;
-    
-    
     
 }
-
 
 
 h2{
-    font-size: 35px;
-    color:rgb(114, 80, 97);
+    font-size: 20px;
+    color:rgb(132, 153, 14);
     padding: 10px;
-    text-decoration:underline;
+    text-transform: uppercase;
+    text-decoration: none;
+    background-color: rgb(226, 223, 223);
 
 }
-
-    
+  
     
 .Artesanales img{
     height: 210px;
     width: 90%;
-    margin: 0px;
+   margin: 0px;
     border: solid silver;
+    
     }
  
 .Artesanales{
     display: grid;
     grid-template-columns: repeat(3,1fr);
-    padding: 10px;
-    gap:10px; 
+    padding:5px;
+    gap: 10px;
      text-align: center;
-     max-height: 30%;
-     width: 60%;
-     
-     
-     }
+     max-width: 80%;
+    }
 
 .card{   
      overflow: hidden;
@@ -119,29 +105,30 @@ h2{
     cursor:default;
     transition: all 400ms ease;
     background: silver;
-    
-    padding: 5px;
-    
-    
-    
-    
-    
-    
+    max-width: 80%;
+     padding: 0;
     }
+    
     .card:hover{
         box-shadow: 5px 5px 20px rgb(0, 0,0,0.4);
         transform: translatey(-3%);
     }
     .card .contenidos{
-        padding: 10px;
+        padding: .2rem .5rem;
         text-align: center;
         height: 20%;
         
     
      }
+     .card img{
+        max-height: 200px;
+        
+     }
      .card .contenidos p{
         line-height: 1.5;
         color: black;
+        padding: 0 1rem;
+        text-align: justify;
      }
      .card .contenidos a{
         text-decoration: none;
@@ -152,69 +139,107 @@ h2{
         border: 1px solid rgb(226, 43, 156);
         border-radius:4px;
         transition: all 400ms ease;
-        
-
-
-     }
+       }
      .card .contenidos a:hover{
         background:  rgb(226, 43, 156);
         color: bisque;
      }
      .card .contenidos h3{
         font-weight: 400;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
      }
-     
-     
-@media (max-widht:778px) { 
-body{
-    padding-top: 70px;
-}
-.header{
-    
-    height: 60px;
-    
-}
+     footer{
+        background-color: silver;
+        color: black;
+     }
+     footer ul{
+        padding: 0;
+     }
+     footer li{
+        list-style: none;
+     }
+     .wrap-footer{
+        display:grid;
+        grid-template-columns:20% 20% 20% 20%;
+        column-gap: 5%;
+        padding: 1rem;
+        margin: 2rem auto;
+        max-width: 1200px;
+        
+     }
+     .logo-element-footer{
+        max-height: 75px;
+        
 
-.logo{
-    font-size: 25px;
-    padding: 0 20px;
-    line-height: 60px;
-}
-.nav-menu{
-    flex-direction: column;
-    margin-right: 20px;
-    background-color: bisque;
-    position: fixed;
-    left: 0;
-    top:60px;
+     }
+     h4{
+        font-size: 25px;
+     }
+     h5{
+        font-size: 20px;
+     }
+     .element-footer h6{
+      
+        margin: 1rem 0;
+     }
+     .text-element-footer li{
+      line-height: 2;
+     }
+     .text-element-footer li a{
+        color:rgb(102, 134, 13);
+        font-size: 20px;
+        text-decoration: none;
+     }
+
+     
+     
+     @media(max-width:768px){
+    .Artesanales{
+            grid-template-columns: repeat(2,1fr);
+            justify-items: center;
+    
+        }
+       }  
+         @media(max-width:600px){
+     body{
+     overflow:scroll;
+     
+            }    
+    .Artesanales{
+     display: flex;
+    flex-flow: wrap;}
+    
+    
+    
+    .nav-toggle{
+                
+     display: block;
+                
+     }
+    .nav-menu{
+     background-color: rgb(175, 180, 180);
+    align-items: center;
     width: 100%;
-    padding: 20px 0;
-    height: calc(100%-60%);
-    overflow-y:auto;
+    height: calc(100% - 60px);
+    overflow-y: auto;
+    position:fixed;
+    display :flex;
+   flex-direction: column;
+    top:60px;
+    padding: 20px ;
     left: 100%;
-    transition: left o.3s;
-}
-.nav-menu-item{
+    transition: left 0.3s;
     
+     }
+                
+    .nav-menu-item{
     line-height: 70px;
+                }
+    .nav-menu-link:hover{
+    color:rgb(70, 70, 2) ;
+                }
+    .nav-menu_visible{
+    left: 0;
     
-}
-
-
-.nav-menu-link:hover {
-
-    background-color: none;
-    color: bisque;
-}
-.nav-toggle{
-    display:block;
-}
-.nav-menu_visible{
-left:0;
-}
-.Artesanales{
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-}
-}
+    }
+            }
